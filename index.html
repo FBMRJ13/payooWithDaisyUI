@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo | Login</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+    <!-- tailwind+DaisyUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+<style>
+    *{
+       font-family: "Outfit", sans-serif; 
+    }
+</style>
+</head>
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <div class="logo w-[200px] mx-auto pt-32">
+        <img src="assets/Logo-full.png" alt="">
+    </div>
+
+    <!-- login form -->
+     <div class="form mt-7 ">
+        <fieldset class="fieldset bg-[#FFFFFF] border-base-300 rounded-box w-xs border p-4 mx-auto rounded-2xl">
+  
+  <label class="label font-bold text-neutral-950 text-lg">Phone Number</label>
+  <input id="phoNum" class="rounded-full p-2.5 bg-[#F4F5F7]" type="text" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your number"  />
+
+  <label class="label font-bold text-neutral-950 text-lg">4 Digit Pin</label>
+  <input id="pin" class="rounded-full p-2.5 bg-[#F4F5F7]  " maxlength="4" type="password" class="input" placeholder="Enter 4 Digit Pin" />
+
+  <button id="login-btn" class="btn  mt-4 btn-primary font-bold  text-lg rounded-full">Login</button>
+</fieldset>
+     </div>
+
+     <script src="script/login.js"></script>
+</body>
+</html>
