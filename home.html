@@ -24,13 +24,14 @@
 </style>
 </head>
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <div class="homoLogo w-11/12 mx-auto flex justify-between pt-8  ">
+    <section class="sticky z-10 top-0">
+        <div class="homoLogo w-11/12 mx-auto flex justify-between pt-8  ">
         <div class="left flex gap-x-2.5">
 <div class="w-15 ">
     <img src="assets/logo.png" alt="">
 </div>
 <div>
-    <p class="font-extrabold text-2xl">$45000</p>
+    <p class="font-extrabold text-2xl" ">$<span id="availableBalance">45000</span></p>
     <p class="text-gray-500 dark:text-gray-400">Available Balance</p>
 </div>
         </div>
@@ -40,6 +41,7 @@
 
         </div>
     </div>
+    </section>
    <!-- Welcome to Payoo -->
   <section class="mt-9 w-11/12 mx-auto space-y-4">
 <h1 class="font-black text-2xl">Welcome to Pay<span class="primary text-primary">oo</span></h1>
@@ -77,6 +79,31 @@
 <p>Transactions</p>
     </button>
 </section>
+
+<!-- Cashout -->
+ <section>
+    
+<div class="form mt-7 ">
+    
+        <fieldset class="fieldset w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl">
+            <h1 class="text-2xl font-bold pb-5">Cash Out</h1>
+  
+  <label class="label font-bold text-neutral-950 text-lg">Agent Number</label>
+  <input id="agentNum" class="rounded-full p-2.5 bg-[#F4F5F7]" type="text" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your 11 digit number"  />
+ 
+ <label class="label font-bold text-neutral-950 text-lg">Amount</label>
+  <input id="amount" class="rounded-full p-2.5 bg-[#F4F5F7]" type="number" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your amount"  />
+
+  <label class="label font-bold text-neutral-950 text-lg">4 Digit Pin</label>
+  <input id="cashOutPin" class="rounded-full p-2.5 bg-[#F4F5F7]  " maxlength="4" type="password" class="input" placeholder="Enter 4 Digit Pin" />
+
+  <button id="cashOut-btn" class="btn  mt-4 btn-primary font-bold  text-lg rounded-full">Withdraw Money</button>
+</fieldset>
+     </div>
+
+
+ </section>
+ <script src="script/cashOut.js"></script>
      
 </body>
 </html>
