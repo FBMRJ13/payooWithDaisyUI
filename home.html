@@ -80,8 +80,9 @@
     </button>
 </section>
 
+
 <!-- Cashout -->
- <section>
+ <section class="">
     
 <div class="form mt-7 ">
     
@@ -103,7 +104,121 @@
 
 
  </section>
+
+
+<!-- Transfer Money -->
+
+<section class="transferMoney ">
+    
+<div class="form mt-7 ">
+    
+        <fieldset class="fieldset w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl">
+            <h1 class="text-2xl font-bold pb-5">Transfer Money</h1>
+  
+  <label class="label font-bold text-neutral-950 text-lg">User Account Number</label>
+  <input id="transferMoneyAgentNum" class="rounded-full p-2.5 bg-[#F4F5F7]" type="text" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your 11 digit number"  />
+ 
+ <label class="label font-bold text-neutral-950 text-lg">Amount</label>
+  <input id="transfer-amount" class="rounded-full p-2.5 bg-[#F4F5F7]" type="number" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your amount"  />
+
+  <label class="label font-bold text-neutral-950 text-lg">4 Digit Pin</label>
+  <input id="transferPin" class="rounded-full p-2.5 bg-[#F4F5F7]  " maxlength="4" type="password" class="input" placeholder="Enter 4 Digit Pin" />
+
+  <button id="Transfer-btn" class="btn  mt-4 btn-primary font-bold  text-lg rounded-full">Send Money</button>
+</fieldset>
+     </div>
+
+
+ </section>
+
+
+<!-- Add Money -->
+
+<section class="AddMoney">
+    
+<div class="form mt-7 ">
+    
+        <fieldset class="fieldset w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl">
+            <h1 class="text-2xl font-bold pb-5">Add Money</h1>
+  
+<label class="label font-bold text-neutral-950 text-lg">Select A Bank</label>
+<select class="select rounded-full p-2.5 bg-[#F4F5F7] w-full" id="selectBank">
+  <option selected>Select Bank</option>
+  <option >DBBL</option>
+  <option>ISLAMIC</option>
+  <option>AGRANI</option>
+</select>
+
+
+  <label class="label font-bold text-neutral-950 text-lg">Bank Account Number</label>
+  <input id="addMoneyAgentNum" class="rounded-full p-2.5 bg-[#F4F5F7]" type="text" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your 11 digit number"  />
+ 
+ <label class="label font-bold text-neutral-950 text-lg">Amount to Add</label>
+  <input id="add-amount" class="rounded-full p-2.5 bg-[#F4F5F7]" type="number" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your amount"  />
+
+  <label class="label font-bold text-neutral-950 text-lg">4 Digit Pin</label>
+  <input id="addPin" class="rounded-full p-2.5 bg-[#F4F5F7]  " maxlength="4" type="password" class="input" placeholder="Enter 4 Digit Pin" />
+
+  <button id="addMoney-btn" class="btn  mt-4 btn-primary font-bold  text-lg rounded-full">Add Money</button>
+</fieldset>
+     </div>
+
+
+ </section>
+
+
+<!-- Pay Bill -->
+
+ <section class="payBill ">
+    
+<div class="form mt-7 ">
+    
+        <fieldset class="fieldset w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl">
+            <h1 class="text-2xl font-bold pb-5">Pay Bill</h1>
+  
+<label class="label font-bold text-neutral-950 text-lg">Select to pay</label>
+<select class="select rounded-full p-2.5 bg-[#F4F5F7] w-full" id="selectBankPay">
+  <option selected>Select Bank</option>
+  <option >DBBL</option>
+  <option>ISLAMIC</option>
+  <option>AGRANI</option>
+</select>
+
+
+  <label class="label font-bold text-neutral-950 text-lg">Biller Account Number</label>
+  <input id="billerAgentNum" class="rounded-full p-2.5 bg-[#F4F5F7]" type="text" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your 11 digit number"  />
+ 
+ <label class="label font-bold text-neutral-950 text-lg">Amount to pay</label>
+  <input id="bill-amount" class="rounded-full p-2.5 bg-[#F4F5F7]" type="number" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your amount"  />
+
+  <label class="label font-bold text-neutral-950 text-lg">4 Digit Pin</label>
+  <input id="billPin" class="rounded-full p-2.5 bg-[#F4F5F7]  " maxlength="4" type="password" class="input" placeholder="Enter 4 Digit Pin" />
+
+  <button id="payBill-btn" class="btn  mt-4 btn-primary font-bold  text-lg rounded-full">Pay Now</button>
+</fieldset>
+     </div>
+
+
+ </section>
+
+
+<!-- Transaction -->
+
+<section class="transaction w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl mt-6 shadow space-y-4" id="transaction">
+    <h1 class="text-2xl font-bold pb-5">Transaction history</h1>
+
+    
+
+
+</section>
+
+
+
+
  <script src="script/cashOut.js"></script>
+ <script src="script/transferMoney.js"></script>
+ <script src="script/addMoney.js"></script>
+ <script src="script/payBill.js"></script>
      
 </body>
 </html>

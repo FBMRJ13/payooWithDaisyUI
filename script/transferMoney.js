@@ -1,32 +1,31 @@
-document.getElementById("cashOut-btn").addEventListener("click",function(){
-const agentNumber=document.getElementById("agentNum").value;
+document.getElementById("Transfer-btn").addEventListener("click",function(){
+const agentNumber=document.getElementById("transferMoneyAgentNum").value;
 if(agentNumber.length!=11){
     alert("invalid agent number");
     return;
 }
 
-const amount=document.getElementById("amount").value;
+const amount=document.getElementById("transfer-amount").value;
 console.log(amount);
 const availableBalance=document.getElementById("availableBalance").innerText;
 console.log(availableBalance);
 const newBalance=Number(availableBalance)-Number(amount);
 if(newBalance<0){
-    alert("not enough money to withdraw");
+    alert("not enough money to Transfer");
     return;
 }
 
-const pin=document.getElementById("cashOutPin").value;
+const pin=document.getElementById("transferPin").value;
 if(pin=="1234"){
     const balance=document.getElementById("availableBalance");
     balance.innerText=newBalance;
-    alert("withDraw Successful");
-
+    alert("transfer Successful");
 
     const newElement = document.createElement('div');
 
 newElement.innerHTML = `
     <h1>
-        ${amount} is cash out successfully <br>
+        ${amount} is transfered successfully <br>
         ${new Date()}
     </h1>
 `;
