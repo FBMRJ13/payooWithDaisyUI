@@ -21,7 +21,6 @@ if(agentNumber.length!=11){
 const amount=document.getElementById("add-amount").value;
 console.log(amount);
 const availableBalance=document.getElementById("availableBalance").innerText;
-console.log(availableBalance);
 
 const newBalance=Number(availableBalance)+Number(amount);
 const pin=document.getElementById("addPin").value;

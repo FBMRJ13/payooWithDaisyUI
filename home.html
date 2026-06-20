@@ -54,27 +54,27 @@
 
   <!-- buttons section -->
 <section class="grid grid-cols-3 w-11/12 mx-auto gap-2 mt-9 gap-y-4">
-    <button class="btn flex-col h-full py-3 btn-soft ">
+    <button onclick="showOnly('addmoneyShow')" class="btn flex-col h-full py-3 btn-soft ">
 <img src="assets/opt-1.png" alt="">
 <p>Add Money</p>
     </button>
-    <button class="btn flex-col h-full py-3 btn-soft">
+    <button onclick="showOnly('cashOutShow')" class="btn flex-col h-full py-3 btn-soft">
 <img src="assets/opt-2.png" alt="">
 <p>Cash Out</p>
     </button>
-    <button class="btn flex-col h-full py-3 btn-soft">
+    <button onclick="showOnly('transferMoneyShow')" class="btn flex-col h-full py-3 btn-soft">
 <img src="assets/opt-3.png" alt="">
 <p>Transfer Money</p>
     </button>
-    <button class="btn flex-col h-full py-3 btn-soft">
+    <button onclick="showOnly('bonusShow')"  class="btn flex-col h-full py-3 btn-soft">
 <img src="assets/opt-4.png" alt="">
 <p>Get Bonus</p>
     </button>
-    <button class="btn flex-col h-full py-3 btn-soft">
+    <button onclick="showOnly('payBillShow')" class="btn flex-col h-full py-3 btn-soft">
 <img src="assets/opt-5.png" alt="">
 <p>Pay Bill</p>
     </button>
-    <button class="btn flex-col h-full py-3 btn-soft">
+    <button onclick="showOnly('transaction')" class="btn flex-col h-full py-3 btn-soft">
 <img src="assets/opt-6.png" alt="">
 <p>Transactions</p>
     </button>
@@ -82,7 +82,7 @@
 
 
 <!-- Cashout -->
- <section class="">
+ <section id="cashOutShow" class="">
     
 <div class="form mt-7 ">
     
@@ -108,7 +108,7 @@
 
 <!-- Transfer Money -->
 
-<section class="transferMoney ">
+<section id="transferMoneyShow" class="transferMoney hidden">
     
 <div class="form mt-7 ">
     
@@ -134,7 +134,7 @@
 
 <!-- Add Money -->
 
-<section class="AddMoney">
+<section id="addmoneyShow" class="AddMoney hidden">
     
 <div class="form mt-7 ">
     
@@ -169,7 +169,7 @@
 
 <!-- Pay Bill -->
 
- <section class="payBill ">
+ <section id="payBillShow" class="payBill hidden">
     
 <div class="form mt-7 ">
     
@@ -204,7 +204,7 @@
 
 <!-- Transaction -->
 
-<section class="transaction w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl mt-6 shadow space-y-4" id="transaction">
+<section  class=" hidden w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl mt-6 shadow space-y-4" id="transaction">
     <h1 class="text-2xl font-bold pb-5">Transaction history</h1>
 
     
@@ -212,13 +212,36 @@
 
 </section>
 
+<!-- get bonus -->
+
+ <section id="bonusShow" class="hidden">
+    
+<div class="form mt-7 ">
+    
+        <fieldset class="fieldset w-11/12 bg-[#FFFFFF] border-base-300 rounded-box  border p-4 mx-auto rounded-2xl">
+            <h1 class="text-2xl font-bold pb-5">Get Bonus</h1>
+  
+  <label class="label font-bold text-neutral-950 text-lg">Enter Bonus Coupon</label>
+  <input id="BonusAgentNum" class="rounded-full p-2.5 bg-[#F4F5F7]" type="text" maxlength="11"  minlength="11" class="input" rounded-full placeholder="Enter your 11 digit number" />
+ 
+ 
+
+  
+
+  <button id="bonus-btn" class="btn  mt-4 btn-primary font-bold  text-lg rounded-full">Get Bonus</button>
+</fieldset>
+     </div>
 
 
+ </section>
+ 
 
  <script src="script/cashOut.js"></script>
  <script src="script/transferMoney.js"></script>
  <script src="script/addMoney.js"></script>
  <script src="script/payBill.js"></script>
+ <script src="script/bonus.js"></script>
+ <script src="script/show.js"></script>
      
 </body>
 </html>
